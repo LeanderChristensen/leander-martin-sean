@@ -1,0 +1,49 @@
+<!--
+sad.html
+Dette dokumentet er laget av Sean 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Miley says goodbye</title>
+	<!-- lenker til global css fil -->
+    <link rel="stylesheet" href="css/sad.css">
+	<!-- lenker til sidespesifikk css fil -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<!-- Spiller av transition musikk når man klikker inn på siden -->
+    <audio src="/assets/transitions/1.mp3" autoplay> 
+	<!-- alt tekst -->
+	<p>If you are reading this, it is because your browser does not support the audio element.</p> 
+	<embed src="/assets/transitions/1.mp3"></audio>
+<div id="main"> 
+    <h1>Miley Says Goodbye?</h1>
+	<!-- container div for hele scenen inkludert bilde -->
+    <div id="scene-container">  
+        <div id="img-container">
+            <a href="./main.html"><img id="scene-clip" src="./assets/goodbye.png" alt="Bilde fra en trist Hannah Montana scene"></a>
+        </div>
+		<!-- container div for epsiode plot -->
+        <div id="plot-container">
+            <p id="plot">I den andre delen av finalen i sesong 3, sliter Miley med å flytte og å fortelle det til Lilly.
+			<br>
+            De viser Lilly kjærlighet og omsorg hele dagen, og når de forteller henne, blir Miley, Lilly og Oliver triste over separasjonen. 
+            Miley forteller faren at det ikke kan være riktig å flytte hvis det gjør dem så ulykkelige.  
+			<br>
+            Episoden slutter med at Miley ser på det tomme huset før hun går bort.</p>
+        </div>
+    </div>
+    <div id="trivia"> <!-- div for trivia -->
+            <h2>Trivia:</h2>
+            <ul>
+                <li id="trivia-1">Dette er siste gang Malibu-hjemmet blir vist</li>
+                <li id="trivia-2">Lykke-armbåndet som Lilly ga til Miley i første episode blir nevnt</li>
+                <li id="trivia-3">Dette er siste epsioden i sesong 3</li>
+            </ul>
+    </div>
+</div>
+</body>
+</html>

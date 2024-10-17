@@ -1,0 +1,31 @@
+<!-- Dette dokumentet er laget av Sean -->
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Surprised</title>
+	<link rel="stylesheet" href="css/app.css"> <!-- lenker til global css fil -->
+    <link rel="stylesheet" href="css/surprise.css"> <!-- lenker til sidespesifikk css fil -->
+</head>
+<body>
+    <audio src="/assets/transitions/2.mp3" autoplay> <!-- Spiller av transition musikk når man klikker inn på siden -->
+	<p>If you are reading this, it is because your browser does not support the audio element.</p> <!-- alt tekst -->
+	<embed src="/assets/transitions/2.mp3"></audio>
+    <div id="main"> <!-- main container -->
+        <h1>Lilly, Do You Want to Know a Secret?</h1> <!-- Episodenavn overskrift -->
+        <div id="scene-container"> <!-- Container for plottet -->
+            <a href="./main.html" ><img src="./assets/surprise.png" id="scene-clip" alt="Bilde fra en scene i Hannah Montana hvor Hannah er overasket"></a>
+            <p id="plot">Lilly får billetter til en Hannah Montana-konsert, men Miley, som i hemmelighet er Hannah Montana, sier at hun ikke kan dra. Etter konserten oppdager Lilly Mileys hemmelighet og vil fortelle alle, men Miley ber henne holde det hemmelig. De krangler, men blir venner igjen når Lilly ikke avslører noe.<p>
+        </div>
+        <div id="trivia"> <!-- Container for trivia -->
+            <h2>Trivia:</h2>
+            <ul>
+                <li id="trivia-1">Dette er den første episoden av Hannah Montana</li>
+                <li id="trivia-2">Over 5,4 millioner seere fulgte med på premieren!</li>
+                <li id="trivia-3">Navnet på episoden er en referanse til The Beatles sangen, <br> "Do You Want to Know a Secret?"</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

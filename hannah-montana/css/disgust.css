@@ -1,0 +1,137 @@
+/* Dette dokumentet er laget av Sean */
+
+/* Henter musepeker */
+a {
+	cursor: url('/assets/cursor.png'), auto;
+}
+
+/* Deklarerer sidesørrelsen og posisjonering vi jobber med i CSS dokumentet */
+#main {
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+}
+
+/* Utseende for overskrift */
+h1 {
+    font-family: "Junegull", sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: #efbf52;
+    text-shadow: 1px 1px 2px black;
+    padding-bottom: 20px;
+    font-style: oblique;
+/* Definerer animasjonen for overskriften */
+    transition-property: transform, opacity;
+    transition-duration: 2s, 3s;
+    transition-timing-function: ease-in-out, ease-in-out;
+}
+
+/* Animasjonen for overskift skjer ved å ha musepeker over overskriften */
+h1:hover {
+    transform: scale(2);
+    opacity: 0;
+}
+
+/* Definerer scene container som flex for å få den sentrert på siden */
+#scene-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Størrelse og utseende for bildet */
+#scene-clip {
+    width: 200px;
+    border-radius: 20%;
+    border: 2px solid #efbf52;
+    box-shadow: 2px 2px 5px black;
+    left: 20px;
+    margin-right: 10px;
+/* Animasjon for bildet */
+    animation-name:  bouncePic;
+    animation-duration:  1s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+/* Bilde blir større og mindre */
+@keyframes bouncePic{
+	0%{
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* Utseende for episodeplot utdraget */
+#plot {
+    font-size: 18px;
+    font-family: "AG Book", sans-serif;
+    width: 450px;
+    height: auto;
+    margin-top: 10px;
+    background-color: #efbf52;
+    padding: 5px;
+    margin-inline-end: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+/* Når musepeker er over plottet vil boksen få en skygge */
+#plot:hover {
+    box-shadow: 2px 2px 5px black;
+}
+
+/* "TRIVIA" underoversrkiftens utseende */
+h2 {
+    font-size: 40px;
+    text-shadow: 1px 1px 2px black;
+/* Animasjon for underoverskriften */
+    animation-name: tilt-trivia;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* Utseende for trivia-punktene */
+#trivia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "CoopFlaired", sans-serif;
+    font-size: 20px;
+    color: #efbf52;
+}
+
+/* Når musepekeren er over hver enkelt trivia-punkt vil den markeres med skygge */
+#trivia-1:hover, #trivia-2:hover, #trivia-3:hover {
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Underoverskriften skal "tilte" frem og tilbake ved hjelp av rotasjon 25 grader til høyre og venstre */
+@keyframes tilt-trivia{
+	0% {
+		transform: rotate(0deg);
+	}
+	25%{
+		transform: rotate(-25deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(25deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}

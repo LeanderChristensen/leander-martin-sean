@@ -1,0 +1,26 @@
+/* CSS som brukes av alle sidene */
+
+body,html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #c17dd3;
+	cursor: url('/assets/cursor.cur'), auto; /* Hannah Montana fjes peker. */
+}
+
+/* 3 forskjellige fonter. AG Book er hentet fra fontsmarket.com, Junegull fra dafont.com og CoopFlaired fra fonts2u.com */
+@font-face {
+	font-family: 'AG Book';
+	src: url('/assets/AG-Book.otf');
+}
+
+@font-face {
+	font-family: 'Junegull';
+	src: url('/assets/Junegull.otf');
+}
+
+@font-face {
+	font-family: 'CoopFlaired';
+	src: url('/assets/CoopFlaired.ttf');
+}
+  

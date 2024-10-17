@@ -1,0 +1,100 @@
+/* Dette dokumentet er laget av Leander */
+
+/* Container rundt alt */
+#main {
+	top: 400px;
+	width: 500px;
+	height: 500px;
+	position: relative;
+	/* Sentrer alt */
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#enter-button {
+	color: #c17dd3;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Brukte rgba formatet for å få opacity */
+	background-color: #efbf52;
+	cursor: url('/assets/cursor.png'), auto; /* Bilde av mikrofon som peker */
+	border: 1px solid #efbf52;
+	border-radius: 20px;
+	padding: 17px 75px;
+	margin: 30px auto 0 auto;
+	display: inline-block; /* For å fikse at link "hitboksen" dekker knappen perfekt */
+	font-size: 32px;
+	font-family: 'Junegull', sans-serif;
+}
+
+#enter-link {
+	text-decoration: none; /* Fjerne strek under tekst */
+}
+
+#logo {
+	width: 100%;
+}
+
+/* Fjeset til Hannah Montana */
+#hannah {
+	position: absolute;
+	width: 200px;
+	z-index: -1;
+	left: 50%;
+	top: 1%;
+	animation-name: head;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+/* Animasjon for at hodet stikker opp fra logoen */
+@keyframes head {
+	0% {
+		margin-top: 100px;
+	}
+	20% {
+		margin-top: 0px;
+	}
+	65% {
+		margin-top: 0px;
+	}
+	70% {
+		margin-top: 100px;
+	}
+	100% {
+		margin-top: 100px;
+	}
+}
+
+/* Hvis brukeren bruker telefon */
+@media screen and (max-width: 530px) {
+	#main {
+		width: 250px;
+	}
+	#enter-button {
+		padding: 10px 28px;
+		font-size: 14px;
+		border-radius: 12px;
+		margin-top: 15px;
+	}
+	#hannah {
+		width: 100px;
+	}
+	@keyframes head {
+		0% {
+			margin-top: 45px;
+		}
+		20% {
+			margin-top: 0px;
+		}
+		65% {
+			margin-top: 0px;
+		}
+		70% {
+			margin-top: 45px;
+		}
+		100% {
+			margin-top: 45px;
+		}
+	}
+}
